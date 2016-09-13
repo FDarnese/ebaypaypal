@@ -1,0 +1,5 @@
+/.vs
+/packages
+/eCalc.UI/bin
+/eCalc.UI/obj
+/eCalc.UI/eCalc.UI.csproj.user

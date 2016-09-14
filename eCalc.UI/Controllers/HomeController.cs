@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eCalc.Backend.ExchangeRates;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace eCalc.UI.Controllers
 {
     public class HomeController : Controller
     {
+        private CurrenciesService currenciesService = new CurrenciesService(new NBPExchangeRatesClient());
         public ActionResult Index()
         {
             return View();
